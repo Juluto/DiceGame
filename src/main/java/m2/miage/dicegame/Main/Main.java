@@ -14,7 +14,6 @@ import java.util.ArrayList;
 public class Main extends Application {
 
     private Stage primaryStage;
-    private static ArrayList<Player> namePlayers = new ArrayList<Player>();
 
     public static void main(String[] args) {
         launch(args);
@@ -40,13 +39,5 @@ public class Main extends Application {
         this.primaryStage.setScene(scene);
         this.primaryStage.show();
 
-    }
-
-    public static ArrayList<Player> getNamePlayers() {
-        return namePlayers;
-    }
-
-    public static void addPlayer(Player player) {
-        namePlayers.add(player);
     }
 }

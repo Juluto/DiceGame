@@ -11,18 +11,7 @@ public class ParameterController {
     public static String save = "XML";
 
     public static void validateParameter(String namePlayerModified, String saveModified){
-        ArrayList<Player> listPlayers = Main.getNamePlayers();
-        boolean userAlreadyExist = false;
-        for(int i = 0; i < listPlayers.size(); i++)
-        {
-            if(listPlayers.get(i).getName().equals(namePlayerModified)){
-                userAlreadyExist = true;
-            }
-        }
-        if(!userAlreadyExist){
-            Player newPlayer = new Player(namePlayerModified);
-            Main.addPlayer(newPlayer);
-        }
         namePlayer = namePlayerModified;
+        save = saveModified;
     }
 }

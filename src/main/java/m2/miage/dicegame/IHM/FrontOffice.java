@@ -9,6 +9,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import m2.miage.dicegame.Main.Main;
+import m2.miage.dicegame.controleur.GameController;
 import m2.miage.dicegame.controleur.ParameterController;
 
 import java.net.URL;
@@ -42,6 +43,20 @@ public class FrontOffice implements Initializable {
     private Text textHighScore;
     @FXML
     private Button buttonHighScoreRetour;
+    @FXML
+    private Pane paneJouer;
+    @FXML
+    private Text textDe1;
+    @FXML
+    private Text textDe2;
+    @FXML
+    private Text textLancer;
+    @FXML
+    private Text textScore;
+    @FXML
+    private Button buttonLancer;
+    @FXML
+    private Button buttonJouerQuitter;
 
     public void setMain(Main main) {
 
@@ -87,5 +102,11 @@ public class FrontOffice implements Initializable {
     public void setHighScore(ActionEvent event) {
         textHighScore.setText(Integer.toString(highScore));
         paneHighScore.toFront();
+    }
+
+    @FXML
+    public void setJouer(ActionEvent event) {
+        GameController.launchGame();
+        paneJouer.toFront();
     }
 }
