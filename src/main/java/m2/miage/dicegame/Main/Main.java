@@ -6,12 +6,15 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import m2.miage.dicegame.IHM.FrontOffice;
+import m2.miage.dicegame.modele.Player;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class Main extends Application {
 
     private Stage primaryStage;
+    private static ArrayList<Player> namePlayers = new ArrayList<Player>();
 
     public static void main(String[] args) {
         launch(args);
@@ -39,4 +42,11 @@ public class Main extends Application {
 
     }
 
+    public static ArrayList<Player> getNamePlayers() {
+        return namePlayers;
+    }
+
+    public static void addPlayer(Player player) {
+        namePlayers.add(player);
+    }
 }

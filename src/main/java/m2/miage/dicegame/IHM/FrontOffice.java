@@ -9,14 +9,13 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import m2.miage.dicegame.Main.Main;
+import m2.miage.dicegame.controleur.ParameterController;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class FrontOffice implements Initializable {
 
-    private String namePlayer = "Player";
-    private String save = "XML";
     private int highScore = 0;
 
     @FXML
@@ -61,15 +60,15 @@ public class FrontOffice implements Initializable {
         CBParametresEnregistrement.getItems().addAll("XML", "JSON");
         CBParametresEnregistrement.getSelectionModel().select("XML");
 
-        TFParametresPseudo.setText(namePlayer);
+        TFParametresPseudo.setText("Player");
 
         textHighScore.setText(Integer.toString(highScore));
     }
 
     @FXML
     public void setFrontPaneMenu(ActionEvent event) {
-        CBParametresEnregistrement.getSelectionModel().select(save);
-        TFParametresPseudo.setText(namePlayer);
+        CBParametresEnregistrement.getSelectionModel().select(ParameterController.save);
+        TFParametresPseudo.setText(ParameterController.namePlayer);
         paneMenu.toFront();
     }
 
@@ -80,8 +79,7 @@ public class FrontOffice implements Initializable {
 
     @FXML
     public void setValiderParametres(ActionEvent event) {
-        this.namePlayer = TFParametresPseudo.getText();
-        this.save = CBParametresEnregistrement.getSelectionModel().getSelectedItem();
+        ParameterController.validateParameter(TFParametresPseudo.getText(), CBParametresEnregistrement.getSelectionModel().getSelectedItem());
         paneMenu.toFront();
     }
 
