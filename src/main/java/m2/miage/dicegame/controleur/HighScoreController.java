@@ -16,7 +16,7 @@ import java.util.ResourceBundle;
 public class HighScoreController implements Initializable {
 
     private Main apps;
-    private HighScore highScore = new HighScore();
+    private static HighScore highScore = new HighScore();
 
     @FXML
     private Pane paneHighScore;
@@ -44,5 +44,13 @@ public class HighScoreController implements Initializable {
     @FXML
     public void setRetour(ActionEvent event) {
         apps.menuView();
+    }
+
+    public static HighScore getHighScore() {
+        return highScore;
+    }
+
+    public static void setHighScore(HighScore highScore) {
+        HighScoreController.highScore = highScore;
     }
 }
