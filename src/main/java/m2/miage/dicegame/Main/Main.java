@@ -6,10 +6,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import m2.miage.dicegame.IHM.FrontOffice;
-import m2.miage.dicegame.modele.Player;
+import m2.miage.dicegame.controleur.MenuController;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
 public class Main extends Application {
 
@@ -23,21 +22,35 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws IOException {
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("DiceGame");
-        Parent root = null;
-        FrontOffice frontOffice = new FrontOffice();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("../../../../resources/FrontOffice/FrontOffice.fxml"));
-        loader.setController(frontOffice);
+        menu();
+        /*Parent root = null;
+        MenuController menuController = new MenuController();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/FrontOffice/Menu.fxml"));
+        loader.setController(menuController);
         try {
             root = loader.load();
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        frontOffice.setMain(this);
+        menuController.setView(this);
         Scene scene = new Scene(root);
 
         this.primaryStage.setScene(scene);
-        this.primaryStage.show();
+        this.primaryStage.show();*/
 
     }
+
+    public void menu() {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/FrontOffice/Menu.fxml"));
+        try {
+            Parent root = (Parent) loader.load();
+            MenuController menuController = (MenuController)loader.getController();
+            menuController.setView(this);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
 }

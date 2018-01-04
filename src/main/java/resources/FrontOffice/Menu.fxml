@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="m2.miage.dicegame.controleur.MenuController">
+   <children>
+      <Pane fx:id="paneMenu" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;">
+         <children>
+            <Text layoutX="207.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jeu de dés" underline="true">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Text>
+            <Button fx:id="buttonJouer" layoutX="247.0" layoutY="119.0" mnemonicParsing="false" onAction="#setJouer" text="Jouer">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonHighScore" layoutX="224.0" layoutY="224.0" mnemonicParsing="false" onAction="#setHighScore" text="Plus haut Score">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonParametres" layoutX="234.0" layoutY="319.0" mnemonicParsing="false" onAction="#setParametres" text="Paramètres">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

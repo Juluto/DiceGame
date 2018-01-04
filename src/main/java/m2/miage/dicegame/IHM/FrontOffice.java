@@ -78,13 +78,18 @@ public class FrontOffice implements Initializable {
         TFParametresPseudo.setText("Player");
 
         textHighScore.setText(Integer.toString(highScore));
+
+        textDe1.setText("0");
+        textDe2.setText("0");
+        textLancer.setText("0");
+        textScore.setText("0");
     }
 
     @FXML
     public void setFrontPaneMenu(ActionEvent event) {
-        CBParametresEnregistrement.getSelectionModel().select(ParameterController.save);
+        /*CBParametresEnregistrement.getSelectionModel().select(ParameterController.save);
         TFParametresPseudo.setText(ParameterController.namePlayer);
-        paneMenu.toFront();
+        paneMenu.toFront();*/
     }
 
     @FXML
@@ -94,8 +99,8 @@ public class FrontOffice implements Initializable {
 
     @FXML
     public void setValiderParametres(ActionEvent event) {
-        ParameterController.validateParameter(TFParametresPseudo.getText(), CBParametresEnregistrement.getSelectionModel().getSelectedItem());
-        paneMenu.toFront();
+        /*ParameterController.validateParameter(TFParametresPseudo.getText(), CBParametresEnregistrement.getSelectionModel().getSelectedItem());
+        paneMenu.toFront();*/
     }
 
     @FXML
@@ -106,6 +111,10 @@ public class FrontOffice implements Initializable {
 
     @FXML
     public void setJouer(ActionEvent event) {
+        textDe1.setText("0");
+        textDe2.setText("0");
+        textLancer.setText("0");
+        textScore.setText("0");
         GameController.launchGame();
         paneJouer.toFront();
     }
