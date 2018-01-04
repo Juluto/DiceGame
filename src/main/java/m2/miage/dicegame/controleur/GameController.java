@@ -1,15 +1,19 @@
 package m2.miage.dicegame.controleur;
 
+import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
+import m2.miage.dicegame.Main.Main;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class GameController implements Initializable {
+
+    private Main apps;
 
     @FXML
     private Pane paneJouer;
@@ -28,6 +32,10 @@ public class GameController implements Initializable {
 
     public GameController() {
         super();
+    }
+
+    public void setView(Application apps) {
+        this.apps = (Main) apps;
     }
 
     /**

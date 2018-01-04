@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="m2.miage.dicegame.controleur.Game">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="m2.miage.dicegame.controleur.GameController">
    <children>
       <Pane fx:id="paneJouer" prefHeight="410.0" prefWidth="610.0" style="-fx-background-color: white;">
          <children>

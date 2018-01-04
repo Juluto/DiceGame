@@ -5,8 +5,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import m2.miage.dicegame.IHM.FrontOffice;
+import m2.miage.dicegame.Product.HighScore;
+import m2.miage.dicegame.controleur.GameController;
+import m2.miage.dicegame.controleur.HighScoreController;
 import m2.miage.dicegame.controleur.MenuController;
+import m2.miage.dicegame.controleur.ParameterController;
 
 import java.io.IOException;
 
@@ -22,30 +25,14 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws IOException {
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("DiceGame");
-        menu();
-        /*Parent root = null;
-        MenuController menuController = new MenuController();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/FrontOffice/Menu.fxml"));
-        loader.setController(menuController);
-        try {
-            root = loader.load();
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        menuController.setView(this);
-        Scene scene = new Scene(root);
-
-        this.primaryStage.setScene(scene);
-        this.primaryStage.show();*/
-
+        menuView();
     }
 
-    public void menu() {
+    public void menuView() {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/FrontOffice/Menu.fxml"));
         try {
             Parent root = (Parent) loader.load();
-            MenuController menuController = (MenuController)loader.getController();
+            MenuController menuController = (MenuController) loader.getController();
             menuController.setView(this);
             this.primaryStage.setScene(new Scene(root));
             this.primaryStage.show();
@@ -54,5 +41,42 @@ public class Main extends Application {
         }
     }
 
+    public void parametersView() {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/FrontOffice/Parameters.fxml"));
+        try {
+            Parent root = (Parent) loader.load();
+            ParameterController parameterController = (ParameterController) loader.getController();
+            parameterController.setView(this);
+            this.primaryStage.setScene(new Scene(root));
+            this.primaryStage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
+    public void highScoreView() {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/FrontOffice/HighScore.fxml"));
+        try {
+            Parent root = (Parent) loader.load();
+            HighScoreController highScoreController = (HighScoreController) loader.getController();
+            highScoreController.setView(this);
+            this.primaryStage.setScene(new Scene(root));
+            this.primaryStage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void gameView() {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/FrontOffice/Game.fxml"));
+        try {
+            Parent root = (Parent) loader.load();
+            GameController gameController = (GameController) loader.getController();
+            gameController.setView(this);
+            this.primaryStage.setScene(new Scene(root));
+            this.primaryStage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

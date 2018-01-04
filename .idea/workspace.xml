@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f41166d-bb28-4b7d-9c62-21b1b6cef271" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/Main/Main.java" afterPath="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/Main/Main.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/controleur/GameController.java" afterPath="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/controleur/GameController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/controleur/HighScoreController.java" afterPath="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/controleur/HighScoreController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/controleur/MenuController.java" afterPath="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/controleur/MenuController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/controleur/ParameterController.java" afterPath="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/controleur/ParameterController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/modele/HighScore.java" afterPath="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/modele/HighScore.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/FrontOffice/Game.fxml" afterPath="$PROJECT_DIR$/src/main/java/resources/FrontOffice/Game.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/FrontOffice/HighScore.fxml" afterPath="$PROJECT_DIR$/src/main/java/resources/FrontOffice/HighScore.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,15 +21,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/m2/miage/dicegame/Main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="50" column="37" lean-forward="false" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+            <state relative-caret-position="302">
+              <caret line="73" column="59" lean-forward="false" selection-start-line="73" selection-start-column="59" selection-end-line="73" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#426#427#0" expanded="true" />
-                <element signature="e#454#455#0" expanded="true" />
+                <element signature="e#594#595#0" expanded="true" />
+                <element signature="e#622#623#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -32,8 +38,8 @@
       <file leaf-file-name="FrontOffice.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/m2/miage/dicegame/IHM/FrontOffice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1445">
-              <caret line="102" column="29" lean-forward="false" selection-start-line="101" selection-start-column="8" selection-end-line="102" selection-end-column="29" />
+            <state relative-caret-position="784">
+              <caret line="107" column="57" lean-forward="false" selection-start-line="107" selection-start-column="30" selection-end-line="107" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1515#1516#0" expanded="true" />
@@ -48,13 +54,43 @@
       <file leaf-file-name="HighScoreController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/m2/miage/dicegame/controleur/HighScoreController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="336">
+              <caret line="40" column="67" lean-forward="false" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#518#519#0" expanded="true" />
-                <element signature="e#541#542#0" expanded="true" />
+                <element signature="e#711#712#0" expanded="true" />
+                <element signature="e#734#735#0" expanded="true" />
+                <element signature="e#779#780#0" expanded="true" />
+                <element signature="e#818#819#0" expanded="true" />
+                <element signature="e#1082#1083#0" expanded="true" />
+                <element signature="e#1113#1114#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HighScore.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/m2/miage/dicegame/modele/HighScore.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+              <folding>
+                <element signature="e#108#109#0" expanded="true" />
+                <element signature="e#138#139#0" expanded="true" />
+                <element signature="e#172#173#0" expanded="true" />
+                <element signature="e#206#207#0" expanded="true" />
+                <element signature="e#263#264#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HighScore.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/m2/miage/dicegame/Product/HighScore.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -62,39 +98,36 @@
       <file leaf-file-name="GameController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/m2/miage/dicegame/controleur/GameController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="40" column="31" lean-forward="false" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+            <state relative-caret-position="140">
+              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#618#619#0" expanded="true" />
-                <element signature="e#641#642#0" expanded="true" />
+                <element signature="e#717#718#0" expanded="true" />
+                <element signature="e#740#741#0" expanded="true" />
+                <element signature="e#785#786#0" expanded="true" />
+                <element signature="e#824#825#0" expanded="true" />
               </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Menu.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/resources/FrontOffice/Menu.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="256" lean-forward="false" selection-start-line="8" selection-start-column="227" selection-end-line="8" selection-end-column="256" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="MenuController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/m2/miage/dicegame/controleur/MenuController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="370">
+              <caret line="43" column="24" lean-forward="true" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#573#574#0" expanded="true" />
-                <element signature="e#596#597#0" expanded="true" />
+                <element signature="e#612#613#0" expanded="true" />
+                <element signature="e#635#636#0" expanded="true" />
+                <element signature="e#680#681#0" expanded="true" />
+                <element signature="e#719#720#0" expanded="true" />
+                <element signature="e#911#912#0" expanded="true" />
+                <element signature="e#942#943#0" expanded="true" />
+                <element signature="e#1003#1004#0" expanded="true" />
+                <element signature="e#1039#1040#0" expanded="true" />
+                <element signature="e#1101#1102#0" expanded="true" />
+                <element signature="e#1138#1139#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,24 +146,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HighScore.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/resources/FrontOffice/HighScore.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="170" lean-forward="false" selection-start-line="9" selection-start-column="141" selection-end-line="9" selection-end-column="170" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Game.fxml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Game.fxml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/resources/FrontOffice/Game.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="170" lean-forward="false" selection-start-line="9" selection-start-column="170" selection-end-line="9" selection-end-column="170" />
+            <state relative-caret-position="323">
+              <caret line="19" column="120" lean-forward="true" selection-start-line="19" selection-start-column="120" selection-end-line="19" selection-end-column="120" />
               <folding />
             </state>
           </provider>
@@ -142,20 +162,24 @@
       <file leaf-file-name="ParameterController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/m2/miage/dicegame/controleur/ParameterController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="59" column="10" lean-forward="false" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+            <state relative-caret-position="-30">
+              <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1151#1152#0" expanded="true" />
-                <element signature="e#1174#1175#0" expanded="true" />
-                <element signature="e#1940#1941#0" expanded="true" />
-                <element signature="e#1973#1974#0" expanded="true" />
-                <element signature="e#2032#2033#0" expanded="true" />
-                <element signature="e#2091#2092#0" expanded="true" />
-                <element signature="e#2129#2130#0" expanded="true" />
-                <element signature="e#2156#2157#0" expanded="true" />
-                <element signature="e#2203#2204#0" expanded="true" />
-                <element signature="e#2250#2251#0" expanded="true" />
+                <element signature="e#887#888#0" expanded="true" />
+                <element signature="e#910#911#0" expanded="true" />
+                <element signature="e#955#956#0" expanded="true" />
+                <element signature="e#994#995#0" expanded="true" />
+                <element signature="e#1702#1703#0" expanded="true" />
+                <element signature="e#1733#1734#0" expanded="true" />
+                <element signature="e#1778#1779#0" expanded="true" />
+                <element signature="e#1811#1812#0" expanded="true" />
+                <element signature="e#1870#1871#0" expanded="true" />
+                <element signature="e#1929#1930#0" expanded="true" />
+                <element signature="e#1967#1968#0" expanded="true" />
+                <element signature="e#1994#1995#0" expanded="true" />
+                <element signature="e#2041#2042#0" expanded="true" />
+                <element signature="e#2088#2089#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -188,20 +212,20 @@
         <option value="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/Product/HighScoreJDBC.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/modele/Die.java" />
-        <option value="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/modele/HighScore.java" />
         <option value="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/modele/Entry.java" />
         <option value="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/modele/Player.java" />
         <option value="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/modele/DiceGame.java" />
-        <option value="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/controleur/GameController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/controleur/HighScoreController.java" />
         <option value="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/IHM/FrontOffice.java" />
-        <option value="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/controleur/ParameterController.java" />
         <option value="$PROJECT_DIR$/src/main/java/resources/FrontOffice/Menu.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/resources/FrontOffice/HighScore.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/resources/FrontOffice/Game.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/resources/FrontOffice/Parameters.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/controleur/MenuController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/controleur/GameController.java" />
         <option value="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/Main/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/controleur/ParameterController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/controleur/MenuController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/modele/HighScore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/m2/miage/dicegame/controleur/HighScoreController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resources/FrontOffice/Game.fxml" />
       </list>
     </option>
   </component>
@@ -218,10 +242,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1125" />
-    <option name="y" value="22" />
-    <option name="width" value="1390" />
-    <option name="height" value="987" />
+    <option name="x" value="-7" />
+    <option name="width" value="1294" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -509,15 +532,15 @@
       <workItem from="1514906262535" duration="2539000" />
       <workItem from="1514908907808" duration="5130000" />
       <workItem from="1514986345890" duration="22858000" />
-      <workItem from="1515068389892" duration="1349000" />
+      <workItem from="1515068389892" duration="6953000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31876000" />
+    <option name="totallyTimeSpent" value="37480000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1125" y="22" width="1390" height="987" extended-state="0" />
+    <frame x="-7" y="0" width="1294" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -528,14 +551,14 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22280967" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3278496" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32711306" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24135338" sideWeight="0.49061662" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26012966" sideWeight="0.48450243" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52507836" sideWeight="0.5093834" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26012966" sideWeight="0.51549757" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -573,8 +596,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -599,8 +622,12 @@
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#518#519#0" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
+            <element signature="e#711#712#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#818#819#0" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
+            <element signature="e#1113#1114#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -611,8 +638,10 @@
           <caret line="40" column="31" lean-forward="false" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
+            <element signature="e#717#718#0" expanded="true" />
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -634,8 +663,16 @@
           <caret line="52" column="10" lean-forward="false" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#596#597#0" expanded="true" />
+            <element signature="e#612#613#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#719#720#0" expanded="true" />
+            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
+            <element signature="e#1003#1004#0" expanded="true" />
+            <element signature="e#1039#1040#0" expanded="true" />
+            <element signature="e#1101#1102#0" expanded="true" />
+            <element signature="e#1138#1139#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -679,16 +716,20 @@
           <caret line="59" column="10" lean-forward="false" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1151#1152#0" expanded="true" />
-            <element signature="e#1174#1175#0" expanded="true" />
-            <element signature="e#1940#1941#0" expanded="true" />
-            <element signature="e#1973#1974#0" expanded="true" />
-            <element signature="e#2032#2033#0" expanded="true" />
-            <element signature="e#2091#2092#0" expanded="true" />
-            <element signature="e#2129#2130#0" expanded="true" />
-            <element signature="e#2156#2157#0" expanded="true" />
-            <element signature="e#2203#2204#0" expanded="true" />
-            <element signature="e#2250#2251#0" expanded="true" />
+            <element signature="e#887#888#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#955#956#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+            <element signature="e#1702#1703#0" expanded="true" />
+            <element signature="e#1733#1734#0" expanded="true" />
+            <element signature="e#1778#1779#0" expanded="true" />
+            <element signature="e#1811#1812#0" expanded="true" />
+            <element signature="e#1870#1871#0" expanded="true" />
+            <element signature="e#1929#1930#0" expanded="true" />
+            <element signature="e#1967#1968#0" expanded="true" />
+            <element signature="e#1994#1995#0" expanded="true" />
+            <element signature="e#2041#2042#0" expanded="true" />
+            <element signature="e#2088#2089#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -699,8 +740,8 @@
           <caret line="23" column="27" lean-forward="false" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -760,8 +801,8 @@
           <caret line="27" column="44" lean-forward="false" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -847,14 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/m2/miage/dicegame/modele/HighScore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/m2/miage/dicegame/modele/Entry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -888,77 +921,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/m2/miage/dicegame/Product/HighScore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/m2/miage/dicegame/modele/DiceGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="627">
           <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/m2/miage/dicegame/controleur/GameController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="40" column="31" lean-forward="false" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/m2/miage/dicegame/controleur/HighScoreController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#518#519#0" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/m2/miage/dicegame/IHM/FrontOffice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1445">
-          <caret line="102" column="29" lean-forward="false" selection-start-line="101" selection-start-column="8" selection-end-line="102" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1515#1516#0" expanded="true" />
-            <element signature="e#1538#1539#0" expanded="true" />
-            <element signature="e#2464#2465#0" expanded="true" />
-            <element signature="e#2504#2505#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/m2/miage/dicegame/controleur/ParameterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="59" column="10" lean-forward="false" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1151#1152#0" expanded="true" />
-            <element signature="e#1174#1175#0" expanded="true" />
-            <element signature="e#1940#1941#0" expanded="true" />
-            <element signature="e#1973#1974#0" expanded="true" />
-            <element signature="e#2032#2033#0" expanded="true" />
-            <element signature="e#2091#2092#0" expanded="true" />
-            <element signature="e#2129#2130#0" expanded="true" />
-            <element signature="e#2156#2157#0" expanded="true" />
-            <element signature="e#2203#2204#0" expanded="true" />
-            <element signature="e#2250#2251#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -976,18 +943,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/resources/FrontOffice/HighScore.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="170" lean-forward="false" selection-start-line="9" selection-start-column="141" selection-end-line="9" selection-end-column="170" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/FrontOffice/Game.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="170" lean-forward="false" selection-start-line="9" selection-start-column="170" selection-end-line="9" selection-end-column="170" />
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1006,28 +962,137 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/m2/miage/dicegame/controleur/MenuController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/m2/miage/dicegame/controleur/ParameterController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="-30">
+          <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#596#597#0" expanded="true" />
+            <element signature="e#887#888#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#955#956#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+            <element signature="e#1702#1703#0" expanded="true" />
+            <element signature="e#1733#1734#0" expanded="true" />
+            <element signature="e#1778#1779#0" expanded="true" />
+            <element signature="e#1811#1812#0" expanded="true" />
+            <element signature="e#1870#1871#0" expanded="true" />
+            <element signature="e#1929#1930#0" expanded="true" />
+            <element signature="e#1967#1968#0" expanded="true" />
+            <element signature="e#1994#1995#0" expanded="true" />
+            <element signature="e#2041#2042#0" expanded="true" />
+            <element signature="e#2088#2089#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/m2/miage/dicegame/Product/HighScore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/m2/miage/dicegame/IHM/FrontOffice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="784">
+          <caret line="107" column="57" lean-forward="false" selection-start-line="107" selection-start-column="30" selection-end-line="107" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1515#1516#0" expanded="true" />
+            <element signature="e#1538#1539#0" expanded="true" />
+            <element signature="e#2464#2465#0" expanded="true" />
+            <element signature="e#2504#2505#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/m2/miage/dicegame/modele/HighScore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <element signature="e#108#109#0" expanded="true" />
+            <element signature="e#138#139#0" expanded="true" />
+            <element signature="e#172#173#0" expanded="true" />
+            <element signature="e#206#207#0" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/m2/miage/dicegame/controleur/HighScoreController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="40" column="67" lean-forward="false" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#711#712#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#818#819#0" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
+            <element signature="e#1113#1114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/m2/miage/dicegame/controleur/MenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="43" column="24" lean-forward="true" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#612#613#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#719#720#0" expanded="true" />
+            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
+            <element signature="e#1003#1004#0" expanded="true" />
+            <element signature="e#1039#1040#0" expanded="true" />
+            <element signature="e#1101#1102#0" expanded="true" />
+            <element signature="e#1138#1139#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/m2/miage/dicegame/Main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="50" column="37" lean-forward="false" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+        <state relative-caret-position="302">
+          <caret line="73" column="59" lean-forward="false" selection-start-line="73" selection-start-column="59" selection-end-line="73" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/m2/miage/dicegame/controleur/GameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#717#718#0" expanded="true" />
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/FrontOffice/Game.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="120" lean-forward="true" selection-start-line="19" selection-start-column="120" selection-end-line="19" selection-end-column="120" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
   </component>

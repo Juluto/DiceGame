@@ -1,5 +1,6 @@
 package m2.miage.dicegame.controleur;
 
+import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -27,8 +28,8 @@ public class MenuController implements Initializable {
         super();
     }
 
-    public void setView(Main main) {
-
+    public void setView(Application apps) {
+        this.apps = (Main) apps;
     }
 
     /**
@@ -40,17 +41,17 @@ public class MenuController implements Initializable {
 
     @FXML
     public void setJouer(ActionEvent event) {
-
+        apps.gameView();
     }
 
     @FXML
     public void setHighScore(ActionEvent event) {
-        //paneHighScore.toFront();
+        apps.highScoreView();
     }
 
     @FXML
     public void setParametres(ActionEvent event) {
-        //paneParametres.toFront();
+        apps.parametersView();
     }
 
 }

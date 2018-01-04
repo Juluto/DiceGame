@@ -6,8 +6,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="m2.miage.dicegame.controleur.HighScoreController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="m2.miage.dicegame.controleur.HighScoreController">
    <children>
       <Pane fx:id="paneHighScore" prefHeight="410.0" prefWidth="610.0" style="-fx-background-color: white;">
          <children>
@@ -21,12 +20,12 @@
                   <Font size="24.0" />
                </font>
             </Text>
-            <Text fx:id="textHighScore" layoutX="192.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+            <Text fx:id="textHighScore" layoutX="192.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
                <font>
                   <Font size="33.0" />
                </font>
             </Text>
-            <Button fx:id="buttonHighScoreRetour" layoutX="274.0" layoutY="323.0" mnemonicParsing="false" onAction="#setFrontPaneMenu" text="Retour" />
+            <Button fx:id="buttonHighScoreRetour" layoutX="274.0" layoutY="323.0" mnemonicParsing="false" onAction="#setRetour" text="Retour" />
          </children>
       </Pane>
    </children>
