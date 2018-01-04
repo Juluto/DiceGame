@@ -47,6 +47,8 @@ public class Main extends Application {
             Parent root = (Parent) loader.load();
             MenuController menuController = (MenuController)loader.getController();
             menuController.setView(this);
+            this.primaryStage.setScene(new Scene(root));
+            this.primaryStage.show();
         } catch (IOException e) {
             e.printStackTrace();
         }
