@@ -28,9 +28,7 @@ public class GameController implements Initializable {
     private Main apps;
     private DiceGame diceGame;
 
-    private ObservableList<Entry> dataEntry = FXCollections.observableArrayList(
-            new Entry("Player", "32")
-    );
+    private static ObservableList<Entry> dataEntry = FXCollections.observableArrayList();
 
     @FXML
     private Pane paneJouer;
@@ -88,6 +86,8 @@ public class GameController implements Initializable {
         buttonLancer.setDisable(false);
         etatJeu.setText("");
 
+        colJoueur.setCellValueFactory(new PropertyValueFactory("name"));
+        colScore.setCellValueFactory(new PropertyValueFactory("score"));
         tableJouer.setItems(dataEntry);
     }
 
@@ -109,8 +109,6 @@ public class GameController implements Initializable {
             buttonLancer.setDisable(true);
             Entry entry = new Entry(diceGame.getPlayer().getName(), String.valueOf(diceGame.getPlayer().getScore()));
             dataEntry.add(entry);
-            colJoueur.setCellValueFactory(new PropertyValueFactory(entry.getName()));
-            //colScore.setCellValueFactory(new PropertyValueFactory(Integer.toString(entry.getScore())));
             if (diceGame.getPlayer().getScore() > HighScoreController.getHighScore().getScore()) {
                 HighScoreController.getHighScore().setScore(diceGame.getPlayer().getScore());
             }
