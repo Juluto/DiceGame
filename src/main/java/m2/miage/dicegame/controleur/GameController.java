@@ -111,6 +111,7 @@ public class GameController implements Initializable {
             dataEntry.add(entry);
             if (diceGame.getPlayer().getScore() > HighScoreController.getHighScore().getScore()) {
                 HighScoreController.getHighScore().setScore(diceGame.getPlayer().getScore());
+                HighScoreController.getHighScore().setNamePlayer(diceGame.getPlayer().getName());
             }
             etatJeu.setText("Partie terminée !");
         }

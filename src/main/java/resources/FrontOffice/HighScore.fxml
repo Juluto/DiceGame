@@ -26,6 +26,16 @@
                </font>
             </Text>
             <Button fx:id="buttonHighScoreRetour" layoutX="274.0" layoutY="323.0" mnemonicParsing="false" onAction="#setRetour" text="Retour" />
+            <Text layoutX="89.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Joueur :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="textHighScorePlayer" layoutX="192.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="username">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Text>
          </children>
       </Pane>
    </children>

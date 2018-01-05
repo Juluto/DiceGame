@@ -23,6 +23,8 @@ public class HighScoreController implements Initializable {
     @FXML
     private Text textHighScore;
     @FXML
+    private Text textHighScorePlayer;
+    @FXML
     private Button buttonHighScoreRetour;
 
     public HighScoreController() {
@@ -39,6 +41,7 @@ public class HighScoreController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         textHighScore.setText(Integer.toString(highScore.getScore()));
+        textHighScorePlayer.setText(highScore.getNamePlayer());
     }
 
     @FXML
