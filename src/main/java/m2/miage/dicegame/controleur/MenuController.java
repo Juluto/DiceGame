@@ -23,6 +23,8 @@ public class MenuController implements Initializable {
     private Button buttonHighScore;
     @FXML
     private Button buttonParametres;
+    @FXML
+    private Button buttonScore;
 
     public MenuController() {
         super();
@@ -52,6 +54,11 @@ public class MenuController implements Initializable {
     @FXML
     public void setParametres(ActionEvent event) {
         apps.parametersView();
+    }
+
+    @FXML
+    public void setScore(ActionEvent event) {
+        apps.scoreView();
     }
 
 }

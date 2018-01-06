@@ -6,10 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import m2.miage.dicegame.Product.HighScore;
-import m2.miage.dicegame.controleur.GameController;
-import m2.miage.dicegame.controleur.HighScoreController;
-import m2.miage.dicegame.controleur.MenuController;
-import m2.miage.dicegame.controleur.ParameterController;
+import m2.miage.dicegame.controleur.*;
 
 import java.io.IOException;
 
@@ -73,6 +70,19 @@ public class Main extends Application {
             Parent root = (Parent) loader.load();
             GameController gameController = (GameController) loader.getController();
             gameController.setView(this);
+            this.primaryStage.setScene(new Scene(root));
+            this.primaryStage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void scoreView() {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/FrontOffice/Score.fxml"));
+        try {
+            Parent root = (Parent) loader.load();
+            ScoreController scoreController = (ScoreController) loader.getController();
+            scoreController.setView(this);
             this.primaryStage.setScene(new Scene(root));
             this.primaryStage.show();
         } catch (IOException e) {

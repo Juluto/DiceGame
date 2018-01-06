@@ -15,19 +15,24 @@
                   <Font size="40.0" />
                </font>
             </Text>
-            <Button fx:id="buttonJouer" layoutX="247.0" layoutY="119.0" mnemonicParsing="false" onAction="#setJouer" text="Jouer">
+            <Button fx:id="buttonJouer" layoutX="231.0" layoutY="144.0" mnemonicParsing="false" onAction="#setJouer" text="Jouer">
                <font>
-                  <Font size="28.0" />
+                  <Font size="37.0" />
                </font>
             </Button>
-            <Button fx:id="buttonHighScore" layoutX="224.0" layoutY="224.0" mnemonicParsing="false" onAction="#setHighScore" text="Plus haut Score">
+            <Button fx:id="buttonHighScore" layoutX="211.0" layoutY="313.0" mnemonicParsing="false" onAction="#setHighScore" text="Plus haut Score">
                <font>
                   <Font size="22.0" />
                </font>
             </Button>
-            <Button fx:id="buttonParametres" layoutX="234.0" layoutY="319.0" mnemonicParsing="false" onAction="#setParametres" text="Paramètres">
+            <Button fx:id="buttonParametres" layoutX="437.0" layoutY="314.0" mnemonicParsing="false" onAction="#setParametres" text="Paramètres">
                <font>
                   <Font size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonScore" layoutX="58.0" layoutY="313.0" mnemonicParsing="false" onAction="#setScore" text="Score">
+               <font>
+                  <Font size="22.0" />
                </font>
             </Button>
          </children>
