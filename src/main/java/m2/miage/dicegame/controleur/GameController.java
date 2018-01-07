@@ -7,6 +7,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -15,10 +16,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import m2.miage.dicegame.Main.Main;
-import m2.miage.dicegame.modele.DiceGame;
-import m2.miage.dicegame.modele.Die;
-import m2.miage.dicegame.modele.Entry;
-import m2.miage.dicegame.modele.Player;
+import m2.miage.dicegame.modele.*;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -53,11 +51,8 @@ public class GameController implements Initializable {
     @FXML
     private ImageView imgDie2;
     @FXML
-    private TableView<Entry> tableJouer;
-    @FXML
-    private TableColumn<Entry, String> colJoueur;
-    @FXML
-    private TableColumn<Entry, String> colScore;
+    private ListView<String> tableJouer;
+
 
     public GameController() {
         super();
@@ -86,8 +81,6 @@ public class GameController implements Initializable {
         buttonLancer.setDisable(false);
         etatJeu.setText("");
 
-        colJoueur.setCellValueFactory(new PropertyValueFactory("name"));
-        colScore.setCellValueFactory(new PropertyValueFactory("score"));
         tableJouer.setItems(ScoreController.getDataEntry());
     }
 
@@ -107,12 +100,11 @@ public class GameController implements Initializable {
         textLancer.setText(Integer.toString(diceGame.getNbLancer()));
         if (diceGame.getNbLancer() == 10) {
             buttonLancer.setDisable(true);
-            Entry entry = new Entry(diceGame.getPlayer().getName(), String.valueOf(diceGame.getPlayer().getScore()));
-            ScoreController.getDataEntry().add(entry);
-            if (diceGame.getPlayer().getScore() > HighScoreController.getHighScore().getScore()) {
-                HighScoreController.getHighScore().setScore(diceGame.getPlayer().getScore());
-                HighScoreController.getHighScore().setNamePlayer(diceGame.getPlayer().getName());
-            }
+            Entry entry = new Entry(diceGame.getPlayer().getName(), diceGame.getPlayer().getScore());
+            ScoreController.getDataEntry().add(entry.toString());
+            /*if (diceGame.getPlayer().getScore() > HighScoreController.getHighScore().getScore()) {
+                HighScore.getInstance().add(entry);
+            }*/
             etatJeu.setText("Partie terminée !");
         }
     }

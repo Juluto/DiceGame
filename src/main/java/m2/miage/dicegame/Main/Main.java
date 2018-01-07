@@ -5,7 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import m2.miage.dicegame.Product.HighScore;
 import m2.miage.dicegame.controleur.*;
 
 import java.io.IOException;

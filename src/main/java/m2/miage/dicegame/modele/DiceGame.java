@@ -2,6 +2,7 @@ package m2.miage.dicegame.modele;
 
 public class DiceGame {
 
+    
     private Player player;
     private Die die1;
     private Die die2;

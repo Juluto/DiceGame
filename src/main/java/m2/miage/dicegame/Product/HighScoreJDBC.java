@@ -1,5 +1,8 @@
 package m2.miage.dicegame.Product;
 
+import m2.miage.dicegame.modele.HighScore;
+import m2.miage.dicegame.modele.Entry;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -19,21 +22,17 @@ public class HighScoreJDBC extends HighScore {
             e.printStackTrace();
             new Error("Cannot access Database at" + url);
         }
-        //hs = this; // enregistrement de l’instance unique!
+        hs = this; // enregistrement de l’instance unique!
         this.load();
-    }
-
-    public void add() {
-
     }
 
     public void save() {
         try {
-            /*for (Enumeration e = this.elements(); e.hasMoreElements(); ) {
+            for (Enumeration e = this.elements(); e.hasMoreElements(); ) {
                 Entry entry = (Entry) e.nextElement();
                 Statement s = con.createStatement();
                 s.executeUpdate("INSERT INTO HighScore (Name,Score)" + "VALUES('" + entry.getName() + "'," + entry.getScore() + ")");
-            }*/
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -44,15 +43,11 @@ public class HighScoreJDBC extends HighScore {
         try {
             Statement select = con.createStatement();
             ResultSet result = select.executeQuery("SELECT Name,Score FROM HighScore");
-            /*while (result.next()) {
+            while (result.next()) {
                 this.add(new Entry(result.getString(1), result.getInt(2)));
-            }*/
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-
-    public void WhoTheHellAreYou() {
-        System.out.println("You don't need to know but you");
     }
 }

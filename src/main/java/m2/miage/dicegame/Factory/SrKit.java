@@ -1,11 +1,16 @@
 package m2.miage.dicegame.Factory;
 
-//import main.java.Product.HighScore;
-//import main.java.Product.HighScoreSr;
+import m2.miage.dicegame.Product.HighScoreSr;
+import m2.miage.dicegame.modele.HighScore;
 
 public class SrKit extends PersistKit {
-    /*public HighScore makeKit(){
-        HighScore highscore = new HighScoreSr();
-        return highscore;
-    }*/
+
+    @Override
+    public HighScore makeKit() {
+        return new HighScoreSr();
+    }
+
+    public SrKit() {
+        pk = this;
+    }
 }

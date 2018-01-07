@@ -7,6 +7,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -20,14 +21,10 @@ public class ScoreController implements Initializable {
 
     private Main apps;
 
-    private static ObservableList<Entry> dataEntry = FXCollections.observableArrayList();
+    private static ObservableList<String> dataEntry = FXCollections.observableArrayList();
 
     @FXML
-    private TableView<Entry> tableJouer;
-    @FXML
-    private TableColumn<Entry, String> colJoueur;
-    @FXML
-    private TableColumn<Entry, String> colScore;
+    private ListView<String> tableJouer;
     @FXML
     private Button buttonScoreRetour;
 
@@ -45,8 +42,6 @@ public class ScoreController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        colJoueur.setCellValueFactory(new PropertyValueFactory("name"));
-        colScore.setCellValueFactory(new PropertyValueFactory("score"));
         tableJouer.setItems(ScoreController.getDataEntry());
     }
 
@@ -55,11 +50,11 @@ public class ScoreController implements Initializable {
         apps.menuView();
     }
 
-    public static ObservableList<Entry> getDataEntry() {
+    public static ObservableList<String> getDataEntry() {
         return dataEntry;
     }
 
-    public static void setDataEntry(ObservableList<Entry> dataEntry) {
+    public static void setDataEntry(ObservableList<String> dataEntry) {
         ScoreController.dataEntry = dataEntry;
     }
 }

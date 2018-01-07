@@ -1,33 +1,41 @@
 package m2.miage.dicegame.modele;
 
-public class HighScore {
+import java.util.Enumeration;
+import java.util.Observable;
+import java.util.Vector;
 
-    private int score;
-    private String namePlayer;
+public abstract class HighScore extends Observable {
 
-    public HighScore() {
+    protected static HighScore hs = null;
+    public Vector entries = new Vector();
+
+    protected HighScore() {
+
+    }
+
+    /*public HighScore() {
         this.score = 0;
         this.namePlayer = "";
+    }*/
+
+    public void add(Entry entry) {
+        entries.addElement(entry);
+        this.setChanged();
+        this.notifyObservers();
     }
 
-    public void add(int score, String name) {
-        this.score = score;
-        this.namePlayer = name;
+    public Enumeration elements() {
+        return entries.elements();
     }
 
-    public int getScore() {
-        return score;
-    }
+    public abstract void load();
 
-    public void setScore(int score) {
-        this.score = score;
-    }
+    public abstract void save();
 
-    public String getNamePlayer() {
-        return namePlayer;
-    }
-
-    public void setNamePlayer(String namePlayer) {
-        this.namePlayer = namePlayer;
+    public static HighScore getInstance() {
+        if (hs == null) {
+            new Error("No Persist Kit declared");
+        }
+        return hs;
     }
 }

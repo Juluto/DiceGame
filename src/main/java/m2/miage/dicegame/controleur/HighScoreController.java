@@ -16,7 +16,7 @@ import java.util.ResourceBundle;
 public class HighScoreController implements Initializable {
 
     private Main apps;
-    private static HighScore highScore = new HighScore();
+    //private static HighScore highScore = new HighScore();
 
     @FXML
     private Pane paneHighScore;
@@ -40,8 +40,8 @@ public class HighScoreController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        textHighScore.setText(Integer.toString(highScore.getScore()));
-        textHighScorePlayer.setText(highScore.getNamePlayer());
+        //textHighScore.setText(Integer.toString(highScore.getScore()));
+        //textHighScorePlayer.setText(highScore.getNamePlayer());
     }
 
     @FXML
@@ -49,11 +49,11 @@ public class HighScoreController implements Initializable {
         apps.menuView();
     }
 
-    public static HighScore getHighScore() {
+    /*public static HighScore getHighScore() {
         return highScore;
     }
 
     public static void setHighScore(HighScore highScore) {
         HighScoreController.highScore = highScore;
-    }
+    }*/
 }

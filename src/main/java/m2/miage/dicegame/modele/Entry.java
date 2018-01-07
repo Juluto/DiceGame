@@ -1,11 +1,13 @@
 package m2.miage.dicegame.modele;
 
-public class Entry {
+import java.io.Serializable;
+
+public class Entry implements Serializable {
 
     private String name;
-    private String score;
+    private int score;
 
-    public Entry(String name, String score) {
+    public Entry(String name, int score) {
         this.name = name;
         this.score = score;
     }
@@ -18,11 +20,15 @@ public class Entry {
         this.name = name;
     }
 
-    public String getScore() {
+    public int getScore() {
         return score;
     }
 
-    public void setScore(String score) {
+    public void setScore(int score) {
         this.score = score;
+    }
+
+    public String toString() {
+        return getName() + " : " + getScore();
     }
 }
